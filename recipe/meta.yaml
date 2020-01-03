@@ -1,5 +1,5 @@
 {% set name = "gwtools" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: fa4ab948f4743a526574babb6fbe0e9d9043e12de3a400ede11802cded4d933b
+  sha256: a5238221c3e773b98cada68bd10ead5ffdad9c4a4e4080a592a71972d90f5ee4
 
 build:
   noarch: python
