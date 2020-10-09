@@ -5,7 +5,7 @@ Home: https://bitbucket.org/chadgalley/gwtools
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gwtools-feedstock/blob/master/LICENSE.txt)
 
 Summary: A collection of gravitational wave tools
 
