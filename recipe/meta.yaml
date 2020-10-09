@@ -1,18 +1,18 @@
 {% set name = "gwtools" %}
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 7d807fe539103c3039ac9aa55c69ba0ef59d8de7683f3999b3d747a819fe62c9
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 8b878867a6cd3cf2bca182a13c486e2bb83ed2b7544fc10de35653cd63397507
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -38,12 +38,12 @@ test:
     - gwtools.rotations
 
 about:
-  home: "https://bitbucket.org/chadgalley/gwtools"
-  license: "MIT"
-  license_family: "MIT"
-  license_file: "LICENSE"
-  summary: "A collection of gravitational wave tools"
-  description: "A collection of useful functions and tools for working with gravitational waveform data."
+  home: https://bitbucket.org/chadgalley/gwtools
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A collection of gravitational wave tools
+  description: A collection of useful functions and tools for working with gravitational waveform data.
 
 extra:
   recipe-maintainers:
