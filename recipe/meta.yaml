@@ -17,7 +17,6 @@ build:
 requirements:
   host:
     - pip
-    - pypandoc
     - python >=3
     - setuptools
   run:
@@ -28,6 +27,8 @@ requirements:
     - scipy
 
 test:
+  requires:
+    - pip
   imports:
     - gwtools
     - gwtools.const
@@ -36,6 +37,10 @@ test:
     - gwtools.harmonics
     - gwtools.mismatch
     - gwtools.rotations
+  commands:
+    # check the metadata
+    - python -m pip check gwtools
+    - python -m pip show gwtools
 
 about:
   home: https://bitbucket.org/chadgalley/gwtools
