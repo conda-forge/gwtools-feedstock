@@ -1,5 +1,5 @@
 {% set name = "gwtools" %}
-{% set version = "1.1.9" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8ed035f93c9f3394bf7c51854ac77fc4b2a39f7af725672777ac0247cd6ca769
+  sha256: b676c625902cb465ecacd8fdb15aa7f12d9c6e512f51851ec67f10f23dd1a5e7
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
